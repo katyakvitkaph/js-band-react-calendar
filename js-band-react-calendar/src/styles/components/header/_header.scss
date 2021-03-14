@@ -1,0 +1,51 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-shadow: 2px 3.464px 8px 4px rgba(168, 168, 168, 0.055);
+    height: 230px;
+    background: #ffffff;
+    z-index: 999;
+}
+
+.header-container {
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.name-user {
+    position: absolute;
+    top: 4%;
+    display: inline-block;
+    left: 45%;
+    right: 50%;
+    width: fit-content;
+    font-size:30px;
+    font-weight: 700;
+    color: silver;
+    text-align: right;
+}
+
+.pnotify-container {
+    width: 250px!important;
+}
+@media screen and (max-width: 767px) {
+    .header {
+        padding-top: 20px;
+    }
+
+    .header-container {
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .header {
+        height: 80px;
+    }
+}
