@@ -5,10 +5,7 @@
     "airbnb",
     "plugin:import/errors",
     "plugin:react/recommended",
-    "plugin:jsx-a11y/recommended",
-    "prettier",
-    "plugin:prettier/recommended",
-    "prettier/react"
+    "plugin:jsx-a11y/recommended"
   ],
   "plugins": ["react", "import", "prettier", "jsx-a11y"],
   "parser": "babel-eslint",

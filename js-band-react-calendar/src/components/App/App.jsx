@@ -1,11 +1,6 @@
 import React from 'react';
 import CalendarPage from '../../pages/CalendarPage';
 
-
-const App = () => {
-	return (
-		<CalendarPage/>
-	);
-};
+const App = () => <CalendarPage />;
 
 export default App;
