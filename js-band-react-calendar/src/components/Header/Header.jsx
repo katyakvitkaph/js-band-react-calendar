@@ -24,8 +24,7 @@ const Header = () => {
 					<div className='buttons-section'>
 						{stateGlobal.isAdmin && (
 							<Link to='/create-event'>
-								{' '}
-								<OrangeButton name='New event' />{' '}
+								<OrangeButton name='New event' />
 							</Link>
 						)}
 						<Link to='/signin'>

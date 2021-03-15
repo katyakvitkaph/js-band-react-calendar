@@ -8,6 +8,13 @@
     "plugin:jsx-a11y/recommended",
     "prettier"
   ],
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "extensions": [".js", ".jsx", ".ts", ".tsx"]
+      }
+    }
+  },
   "plugins": ["react", "import", "prettier", "jsx-a11y"],
   "parser": "babel-eslint",
   "parserOptions": {
