@@ -2,9 +2,9 @@
 
 The Calendar application allows you to view the daily schedule for a week for multiple participants. The application has the ability to create an event indicating the time, day of the week and participants, as well as delete events and filter by participants.
 
-# Homework task 6**
+# Homework task 5**
 
-# Improvements* The application has been partially moved to React: the static "Table" component.
+Improvements* The application has been partially moved to React: the static "Table" component.
 
 # Available Scripts
 In the project directory, you can run:
