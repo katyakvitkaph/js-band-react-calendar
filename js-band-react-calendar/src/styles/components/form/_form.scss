@@ -38,7 +38,13 @@
     outline: none;
 }
 
-
+.error-message {
+    color: #e12626;
+    display: inline-block;
+    font-size: 14px;
+    line-height: 16px;
+    margin-left: 10px;
+}
 
 @media screen and (max-width: 767px) {
     .form {

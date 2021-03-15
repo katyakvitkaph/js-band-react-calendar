@@ -1,8 +1,12 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
+import GlobalContext from '../../context/global';
 import { OrangeButton, BlackButton } from '../Buttons/index';
 import { ReactComponent as CalendarLogo } from '../../assets/icons/calendar.svg';
-const Header = ({ handleOut }) => {
+
+const Header = () => {
+	const { stateGlobal } = useContext(GlobalContext);
+
 	return (
 		<header className='header'>
 			<div className='header-container'>
@@ -18,9 +22,14 @@ const Header = ({ handleOut }) => {
 						<option value='Kate'>Kate</option>
 					</select>
 					<div className='buttons-section'>
-						<OrangeButton name={'New event'} />
+						{stateGlobal.isAdmin && (
+							<Link to='/create-event'>
+								{' '}
+								<OrangeButton name='New event' />{' '}
+							</Link>
+						)}
 						<Link to='/signin'>
-							<BlackButton name={'Sign out'} onClick={handleOut} />
+							<BlackButton name='Sign out' />
 						</Link>
 					</div>
 				</form>

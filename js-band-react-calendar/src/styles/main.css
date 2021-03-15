@@ -518,8 +518,7 @@ td {
   color: #6e6969;
 }
 
-.form__select,
-.form__priority-select {
+.form__select {
   display: inline-block;
   background-color: #f5f7fa;
   width: 120px;
@@ -527,6 +526,17 @@ td {
   padding: 8px 32px 8px 8px;
   color: #000;
   outline: none;
+}
+
+.error-message {
+  color: #e12626;
+  display: inline-block;
+  font-size: 14px;
+  line-height: 16px;
+  margin-left: 12px;
+  position: absolute;
+  top: 50px;
+  left: 0;
 }
 
 @media screen and (max-width: 767px) {
@@ -540,9 +550,8 @@ td {
             align-items: center;
     padding-bottom: 4px;
   }
-  .form__input-div,
-  .form__priority-select,
-  .form__select {
+  .form__input-div
+.form__select {
     margin-bottom: 4px;
   }
 }
@@ -556,11 +565,10 @@ td {
 
 @media screen and (min-width: 992px) {
   .form {
-    width: 80%;
+    width: 84%;
   }
-  .form__select,
-  .form__priority-select {
-    width: 160px;
+  .form__select {
+    width: 175px;
   }
 }
 
@@ -572,7 +580,7 @@ td {
   border-radius: none !important;
   letter-spacing: 0px;
   line-height: 21px;
-  font-family: 'Montserrat';
+  font-family: "Montserrat", sans-serif;
   font-weight: 700;
   text-align: center;
   outline: none;
@@ -582,6 +590,7 @@ td {
 .create-btn {
   background-color: #FFA500;
   color: #ffffff;
+  margin-right: 10px;
 }
 
 .signout-btn {
@@ -595,7 +604,7 @@ td {
 }
 
 .buttons-section {
-  margin-right: 260px;
+  margin-right: 250px;
 }
 
 .main-content {
@@ -663,6 +672,11 @@ td {
   background-color: #fff;
   -webkit-box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 3px 1px -2px rgba(0, 0, 0, 0.12);
           box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 3px 1px -2px rgba(0, 0, 0, 0.12);
+}
+
+.modal-window {
+  margin: 0 auto;
+  margin-top: 200px;
 }
 
 .modal-form__title {
@@ -764,6 +778,77 @@ td {
   margin: 0 auto;
   margin-top: 250px;
   width: 300px;
+}
+
+.App {
+  text-align: center;
+  padding-top: 2rem;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1040;
+  width: 100vw;
+  height: 100vh;
+  background-color: #000;
+  opacity: .5;
+}
+
+.modal-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1050;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  outline: 0;
+}
+
+.modal {
+  z-index: 100;
+  background: white;
+  position: relative;
+  margin: 1.75rem auto;
+  border-radius: 3px;
+  max-width: 500px;
+  padding: 2rem;
+}
+
+.modal-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.modal-close-button {
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 1;
+  color: #000;
+  opacity: .3;
+  cursor: pointer;
+  border: none;
+}
+
+button {
+  font-size: .9rem;
+  font-weight: 700;
+  border: none;
+  border-radius: 3px;
+  padding: .3rem 1rem;
+  margin-left: .5rem;
+}
+
+.button-default {
+  background: #247BA0;
+  color: #fff;
 }
 
 .item {
