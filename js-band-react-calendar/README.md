@@ -53,6 +53,7 @@ customize it when you are ready for it.
 
 ## Project Structure
 
+<<<<<<< HEAD
 ```
 js-band-react-calendar
 ├─ .eslintrc
@@ -60,6 +61,22 @@ js-band-react-calendar
 └─ src
    ├─ actions
    │  └─ actions.js
+=======
+js-band-react-calendar
+├─ .eslintrc
+├─ .gitignore
+├─ package-lock.json
+├─ package.json
+├─ public
+│  ├─ favicon.ico
+│  ├─ index.html
+│  ├─ logo192.png
+│  ├─ logo512.png
+│  ├─ manifest.json
+│  └─ robots.txt
+├─ README.md
+└─ src
+>>>>>>> master
    ├─ assets
    │  └─ icons
    │     └─ calendar.svg
@@ -71,6 +88,7 @@ js-band-react-calendar
    │  │  ├─ BlackButton.jsx
    │  │  ├─ index.js
    │  │  └─ OrangeButton.jsx
+<<<<<<< HEAD
    │  ├─ Event
    │  │  └─ Events.jsx
    │  ├─ Footer
@@ -89,12 +107,21 @@ js-band-react-calendar
    │  ├─ SignInForm
    │  │  ├─ index.js
    │  │  └─ SignInForm.jsx
+=======
+   │  ├─ Footer
+   │  │  ├─ Footer.jsx
+   │  │  └─ index.js
+   │  ├─ Header
+   │  │  ├─ Header.jsx
+   │  │  └─ index.js
+>>>>>>> master
    │  └─ Table
    │     ├─ index.js
    │     ├─ Table.jsx
    │     ├─ TableCell.jsx
    │     ├─ TBody.jsx
    │     └─ Thead.jsx
+<<<<<<< HEAD
    ├─ constants
    │  ├─ actionTypes.js
    │  └─ collectionTypes.js
@@ -139,5 +166,36 @@ js-band-react-calendar
    │  ├─ main.scss
    │  └─ _common.scss
    └─ users.json
+=======
+   ├─ index.js
+   ├─ pages
+   │  └─ CalendarPage.jsx
+   └─ styles
+      ├─ base
+      │  └─ _normalize.scss
+      ├─ components
+      │  ├─ buttons
+      │  │  └─ _buttons.scss
+      │  ├─ footer
+      │  │  └─ _footer.scss
+      │  ├─ form
+      │  │  └─ _form.scss
+      │  ├─ header
+      │  │  └─ _header.scss
+      │  ├─ item
+      │  │  └─ _item.scss
+      │  ├─ main-content
+      │  │  └─ _main-content.scss
+      │  ├─ modal
+      │  │  └─ _modal.scss
+      │  ├─ pages
+      │  │  └─ _page-not-found.scss
+      │  └─ table
+      │     └─ _table.scss
+      ├─ main.css
+      ├─ main.css.map
+      ├─ main.scss
+      └─ _common.scss
+>>>>>>> master
 
 ```
